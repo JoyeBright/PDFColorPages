@@ -1,0 +1,16 @@
+[build-system]
+requires=["setuptools>=61.0"]
+build-backend="setuptools.build_meta"
+
+[project]
+name="pdfcolorpages"
+version="0.1.0"
+description="Detect color pages in PDFs."
+readme="README.md"
+requires-python=">=3.8"
+authors=[{name="Javad Pourmostafa", email="javad.pourmostafa@gmail.com"}]
+license={text="MIT"}
+dependencies=["pymupdf","numpy","pillow"]
+
+[project.scripts]
+pdfcolorpages="pdfcolorpages.cli:main"
